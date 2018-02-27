@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Лада Пенькова](https://up.htmlacademy.ru/htmlcss/20/user/340827).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Зубов](https://htmlacademy.ru/profile/serj).
 
 ---
 
