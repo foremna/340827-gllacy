@@ -54,13 +54,30 @@
 		</ul>
 
 		<section class="info-setting">
+
+			<div class="setting-streamline">
 			<p>Сортировка:</p>
-			<select name="streamline" id="" class="setting-sort">
+			<select name="streamline" id="" class="setting-select">
 				<option value="population" class="">по популярности</option>
 				<option value="cheap" class="">сначала недорогие</option>
 				<option value="dear" class="">сначала дорогие</option>
 				<option value="fatnesses" class="">по жирности</option>
 			</select>
+			</div>
+			
+			<div class="setting-regulation">
+				<p>Цена: 100 руб. – 500 руб</p>
+				<input type="range" name="rub" id="">
+			</div>
+
+			<div class="setting-fatnesses">
+				<p class="fatnesses">Жирность:
+				<input type="radio" name="fatnesses" id="">0%
+				<input type="radio" name="fatnesses" id="">до 10%
+				<input type="radio" name="fatnesses" id="">до 30%
+				<input type="radio" name="fatnesses" id="">выше 30%
+				</p>
+			</div>
 		</section>
 	</main>
 
