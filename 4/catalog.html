@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML Academy: Глейси</title>
+  <base href="https://htmlacademy-htmlcss.github.io/340827-gllacy/4/">
+</head>
+<body>
+  	<header class="main-header">
+
+  		<nav class="main-navigation">
+  			<img src="img/Logo.png" width="156" height="64" alt="Логотип сайта">
+
+  			<ul class="site-navigation">
+  				<li><a href="#">Каталог</a>
+  					<ul>
+  						<a href="#"><li>Новинки</li></a>
+  						<a href="#"><li>Сливочное</li></a>
+  						<a href="#"><li>Щербеты</li></a>
+  						<a href="#"><li>Фруктовый лед</li></a>
+  						<a href="#"><li>Мелорин</li></a>
+  					</ul>
+  				</li>
+  				<li><a href="#">Доставка и оплата</a></li>
+  				<li><a href="#">О Компании</a></li>
+  			</ul>
+
+  			<ul class="user-navigation">
+  				<a href="#">Поиск</a>
+  				<div class="user-search-form">
+  					<form action="https://echo.htmlacademy.ru" method="get" class="modal-form-search">
+  						<input type="search" name="search" placeholder="Что ищем?" id="">
+  					</form>
+  				</div>
+  				<a href="#">Вход</a>
+  				<div class="modal-form-appointment">
+  					<form action="https://echo.htmlacademy.ru" method="get" class="form-appointment">
+  						<input type="email" name="email" value="Электронная почта" required="">
+  						<input type="password" name="password" value="Пароль" required="">
+  						<a href="#">Войти</a>
+  						<a href="#">Забыли пароль?</a>
+  						<a href="#">Новая регистрация</a>
+  					</form>  				
+
+  			</ul>
+  			<b>
+  				С 10 до 20, ежедневно
+  			</b>
+  			<br>
+  			<b>
+  				8 812 450-25-25
+  			</b>
+			<a href="#">2 товара</a>
+  			<div class="main-basket"> <!-- Корзина -->
+  				
+  				<ul>
+  					<li>
+						<p>x</p>
+  						<img src="#" alt="">
+  						<span>Пломбир с апельсиновым джемом</span>
+  						<span>1,5 кг х </span>
+  						<small>200 руб.</small>
+  						<b>300 руб.</b>
+  					</li>
+  					<li>
+  						<p>x</p>
+  						<img src="#" alt="">
+  						<span>Клубничный пломбир с присыпкой из белого шоколада</span>
+  						<span>1,5 кг х </span>
+  						<small>300 руб.</small>
+  						<b>450 руб.</b>
+  					</li>
+  				</ul>
+				<b>Итого:</b>
+				<b>750 руб.</b>
+				<button>Оформить заказ</button>
+				
+  			</div>
+
+  		</nav>
+
+  	</header>
+
+	<main class="catalog">
+
+		<div class="road-catalog">
+		<ul>
+			<li><a href="#">Главная</a></li>
+			<li><a href="#">Каталог</a></li>
+			<li><a href="#">Сливочное</a></li>
+		</ul>
+
+		<section class="info-setting">
+
+			<div class="setting-streamline">
+			<p>Сортировка:</p>
+			<select name="streamline" id="" class="setting-select">
+				<option value="population" class="">по популярности</option>
+				<option value="cheap" class="">сначала недорогие</option>
+				<option value="dear" class="">сначала дорогие</option>
+				<option value="fatnesses" class="">по жирности</option>
+			</select>
+			</div>
+			
+			<div class="setting-regulation">
+				<p>Цена: 100 руб. – 500 руб</p>
+				<input type="range" name="price" id="">
+			</div>
+
+			<div class="setting-fatnesses">
+				<p class="fatnesses">Жирность:
+					<input type="radio" name="fatnesses" id="">0%
+					<input type="radio" name="fatnesses" id="">до 10%
+					<input type="radio" name="fatnesses" id="">до 30%
+					<input type="radio" name="fatnesses" id="">выше 30%
+				</p>
+			</div>
+
+			<div class="setting-fillers">
+				<p class="fillers">Наполнители:</p>
+					<p><input type="checkbox" name="icecream" id="">шоколадные</p>
+					<p><input type="checkbox" name="icecream" id="">сахарные присыпки</p>
+					<p><input type="checkbox" name="icecream" id="">фрукты</p>
+					<p><input type="checkbox" name="icecream" id="">сиропы</p>
+					<p><input type="checkbox" name="icecream" id="">джемы</p>
+			</div>
+			
+			<div class="setting-button">
+				<button>Применить</button>
+			</div>
+			
+		</section>
+
+		<section class="main-catalog">
+
+			<div>
+				<img src="img/ic-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"></img>
+				<strong>
+					310₽/кг
+				</strong>
+					<span>
+						Сливочное с апельсиновым джемом и цитрусовой стружкой
+					</span>
+			</div>
+			<div>
+				<img src="img/ic-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада"></img>
+				<strong>
+					380₽/кг
+				</strong>
+					<span>
+						Сливочно-кофейное с кусочками шоколада
+					</span>
+			</div>
+			<div>
+				<img src="img/ic-3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада"></img>
+				<strong>
+					355₽/кг
+				</strong>
+					<span>
+						Сливочно-клубничное с присыпкой из белого шоколада
+					</span>
+			</div>
+			<div>
+				<img src="img/ic-4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой"></img>
+				<strong>
+					415₽/кг
+				</strong>
+					<span>
+						Сливочное крем-брюле с карамельной подливкой
+					</span>
+			</div>
+			<div>
+				<img src="img/ic-5.jpg" width="267" height="267" alt="Сливочное с брусничным джемом"></img>
+				<strong>
+					325₽/кг
+				</strong>
+					<span>
+						Сливочное с брусничным джемом
+					</span>
+			</div>
+			<div>
+				<img src="img/ic-6.jpg" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники"></img>
+				<strong>
+					410₽/кг
+				</strong>
+					<span>
+						Сливочно-черничное с цельными ягодами черники
+					</span>
+			</div>
+			<div>
+				<img src="img/ic-7.jpg" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой"></img>
+				<strong>
+					375₽/кг
+				</strong>
+					<span>
+						Сливочно-лимонное с карамельной присыпкой
+					</span>
+			</div>
+			<div>
+				<img src="img/ic-8.jpg" width="267" height="267" alt="Сливочное с шоколадной стружкой"></img>
+				<strong>
+					320₽/кг
+				</strong>
+					<span>
+						Сливочное с шоколадной стружкой
+					</span>
+			</div>
+			<div>
+				<img src="img/ic-9.jpg" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада"></img>
+				<strong>
+					440₽/кг
+				</strong>
+					<span>
+						Сливочно-ванильное с кусочками шоколада
+					</span>
+			</div>
+			<div>
+				<img src="img/ic-10.jpg" width="267" height="267" alt="Сливочноe с ментоловым сиропом"></img>
+				<strong>
+					435₽/кг
+				</strong>
+					<span>
+						Сливочноe с ментоловым сиропом
+					</span>
+			</div>
+			<div>
+				<img src="img/ic-11.jpg" width="267" height="267" alt="Сливочное с кусочками черного шоколада"></img>
+				<strong>
+					355₽/кг
+				</strong>
+					<span>
+						Сливочное с кусочками черного шоколада
+					</span>
+			</div>
+			<div>
+				<img src="img/ic-12.jpg" width="267" height="267" alt="Сливочное с мятным сиропом"></img>
+				<strong>
+					420₽/кг
+				</strong>
+					<span>
+						Сливочное с мятным сиропом
+					</span>
+			</div>
+
+			<div class="catalog-item">
+
+				<ul>
+					<li class="item">1</li>
+					<li class="item">2</li>
+					<li class="item">3</li>
+					<li class="item">4</li>
+					<li class="item">5</li>
+					<li class="item">></li>
+				</ul>
+
+			</div>
+
+		</section>
+
+	</main>
+
+  	<footer class="main-footer">
+    	
+    	<section class="footer-social">
+    		<div class="social-icon"><img src="#" alt="twitter"></div>
+    		<div class="social-icon"><img src="#" alt="instagram"></div>
+    		<div class="social-icon"><img src="#" alt="facebook"></div>
+    		<div class="social-icon"><img src="#" alt="vk"></div>
+    	</section>
+
+		<section class="footer-info">
+			<img src="#" alt="сердечко">
+			<b><a href="#">Для поставщиков</a></b>
+			<a href="#">О производстве</a>
+			<a href="#">Наши документы</a>
+			<a href="#">Экологические стандарты</a>
+		</section>
+
+		<section class="htmlacademy">
+			<img src="#" alt="htmlacademy">
+			<p>
+				Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+				© 2017
+			</p>
+		</section>
+    </footer>
+
+    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
+	
+</body>
+</html>
