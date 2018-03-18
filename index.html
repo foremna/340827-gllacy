@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
@@ -11,34 +13,40 @@
   		<nav class="main-navigation">
   			<img src="img/Logo.png" width="156" height="64" alt="Логотип сайта">
   			<ul class="site-navigation">
-  				<li><a href="#">Каталог</a>
+  				<li><a href="catalog.html" class="link">Каталог</a>
   					<ul>
-  						<li>Новинки</li>
-  						<li>Сливочное</li>
-  						<li>Щербеты</li>
-  						<li>Фруктовый лед</li>
-  						<li>Мелорин</li>
+  						<li><a href="#" class="nav-link-bold">Новинки</a></li>
+  						<li><a href="#" class="nav-link">Сливочное</a></li>
+  						<li><a href="#" class="nav-link">Щербеты</a></li>
+  						<li><a href="#" class="nav-link">Фруктовый лед</a></li>
+  						<li><a href="#" class="nav-link">Мелорин</a></li>
   					</ul>
   				</li>
   				<li><a href="#">Доставка и оплата</a></li>
   				<li><a href="#">О Компании</a></li>
   			</ul>
-  			<ul class="user-navigation">
-  				<li>Поиск</li>
-  				<input type="text" value="Что ищем?">
-  				<li>Вход</li>
-  				<input type="email" value="Электронная почта" required="">
-  				<input type="password" value="Пароль" required="">
-  				<a href="#">Войти</a>
-  				<a href="#">Забыли пароль?</a>
-  				<a href="#">Новая регистрация</a>
-  				<li>Пусто</li>
-  			</ul>
-  			<b>
+  				<a href="#" class="search">Поиск</a>
+  				<div class="user-search-form">
+  					<form action="https://echo.htmlacademy.ru" method="get" class="modal-form-search">
+  						<input type="search" name="search" placeholder="Что ищем?" id="">
+  					</form>
+  				</div>
+  				<a href="#" class="sign-in"><img src="#" alt="вход">Вход</a>
+  				<div class="modal-form-appointment">
+  					<form action="https://echo.htmlacademy.ru" method="get" class="form-appointment">
+  						<input type="email" name="email" placeholder="Электронная почта" required="">
+  						<input type="password" name="password" value="Пароль" required="">
+  						<a href="#" class="sign-link">Войти</a>
+  						<a href="#" class="forgot-password">Забыли пароль?</a>
+  						<a href="#" class="new-account">Новая регистрация</a>
+  					</form>
+  				</div>
+  				<a href="#" class="basket"><img src="#" alt="корзина">Пусто</a>
+  			<b class="time-work">
   				С 10 до 20, ежедневно
   			</b>
   			<br>
-  			<b>
+  			<b class="main-phone">
   				8 812 450-25-25
   			</b>
 
@@ -48,7 +56,7 @@
 
   	<main class="container">
 
-  		<section class="container-carousel">
+  		<section class="container-slides">
 
 			<div class="slide-one">
 				<img src="img/slide-ice-cream.png" width="1045" height="881" alt="Крем-брюле и пломбир с малиновым джемом">
@@ -71,12 +79,24 @@
   				</h2>
 			</div>
 
-  			<ul class="icon navigation-carousel">
-  				<li>1</li>
-  				<li>2</li>
-  				<li>3</li>
+  			<ul class="slides-switches">
+  				<li class="slide-radio">
+  					<button class="slide-btn">
+  					Первый слайд
+  				</button>
+  				</li>
+  				<li>
+  					<button class="slide-btn">
+  					Второй слайд
+  				</button>
+  				</li>
+  				<li>
+  					<button class="slide-btn">
+  					Третий слайд
+  				</button>
+  				</li>
   			</ul>
-  			<a href="#" class="button-carousel">Давайте оба!</a>
+  			<a href="#" class="button-slides">Давайте оба!</a>
 
   		</section>
 
@@ -89,7 +109,7 @@
 				<p>
 					При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
 				</p>
-				<a href="#">Хочу варенье!</a>
+				<a href="#" class="action-btn">Хочу варенье!</a>
 				<img src="img/raspberry-background.png" width="560" height="229" alt="малинки">
 			</div>
 
@@ -100,7 +120,7 @@
 				<p>
 					При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
 				</p>
-				<a href="#">Хочу шоколадки!</a>
+				<a href="#" class="action-btn">Хочу шоколадки!</a>
 				<img src="img/chocolate-background.png" width="560" height="229" alt="шоколад">
 			</div>
 
@@ -109,40 +129,60 @@
 		<section class="popular">
 			
 			<div class="popular-item">
-				<img src="img/ic-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-				<strong>
-					310₽/кг
-				</strong>
+				<div class="popular-ice">
+					<img src="img/ic-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+				</div>
+				<b>
+					310₽/
+				</b>
+				<small>
+					кг
+				</small>
 				<span>
 					Сливочное с апельсиновым джемом и цитрусовой стружкой
 				</span>
 			</div>
 
 			<div class="popular-item">
-				<img src="img/ic-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
-				<strong>
-					380₽/кг
-				</strong>
+				<div class="popular-ice">
+					<img src="img/ic-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+				</div>
+				<b>
+					380₽/
+				</b>
+				<small>
+					кг
+				</small>
 				<span>
 					Сливочно-кофейное с кусочками шоколада
 				</span>
 			</div>
 
 			<div class="popular-item">
-				<img src="img/ic-3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-				<strong>
-					355₽/кг
-				</strong>
+				<div class="popular-ice">
+					<img src="img/ic-3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+				</div>
+				<b>
+					355₽/
+				</b>
+				<small>
+					кг
+				</small>
 				<span>
 					Сливочно-клубничное с присыпкой из белого шоколада
 				</span>
 			</div>
 
 			<div class="popular-item">
-				<img src="img/ic-4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
-				<strong>
-					415₽/кг
-			</strong>
+				<div class="popular-ice">
+					<img src="img/ic-4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+				</div>
+				<b>
+					415₽/
+				</b>
+				<small>
+					кг
+				</small>
 				<span>
 					Сливочное крем-брюле с карамельной подливкой
 			</span>
@@ -151,7 +191,7 @@
 		</section>
 
 		<section class="container-features">
-
+		
 			<h3>
 				Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес
 			</h3>
@@ -186,48 +226,61 @@
 
 		<section class="container-information">
 
-			<div>
-				<img src="#" alt="коктейль">
-				<span>
+			<div class="info-news">
+				<small>
 					Новое в нашем блоге
-				</span>
-				<a href="#">
+				</small>
+				<a href="#" class="fruct-ice">
 					10 способов сервировки фруктовых щербетов к столу
 				</a>
 			</div>
-			<div>
-				<span>
-					Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
-				</span>
-				<input type="email" value="Электронная почта" required="">
-				<a href="#">Отправить</a>
+			<div class="info-subscribe">
+				<div class="lines">
+					<span>
+						Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+					</span>
+					<input type="email" name="email" placeholder="Электронная почта" required="">
+					<a href="#" class="subscribe-link">
+						Отправить
+					</a>
+				</div>
 			</div>
 
 		</section>
 
 		<section class="container-map">
 
-			<div>
+			<div class="contacts">
 				<span>
 					Адрес главного офиса
 					<br>
 					и офлайн-магазина:
 				</span>
-				<strong>
+				<strong class="con-address">
 					ул. Большая Конюшенная 19/8, Санкт-Петербург
 				</strong>
 				<span>
 					Для заказов по телефону:
 				</span>
-				<strong>
+				<strong class="con-phone">
 					8 812 450-25-25
 				</strong>
 				<span>
 					(с 10 до 20 ежедневно)
 				</span>
 				<button class="btn-form-map">Форма обратной связи</button>
+				<div class="modal-contacts">
+					<p>Мы обязательно вам ответим!</p>
+					<form action="https://echo.htmlacademy.ru" method="get" class="modal-form-contacts">
+						<input type="text" name="name" placeholder="Как вас зовут?">
+						<input type="email" name="email" placeholder="Ваша почта для ответа?">
+						<textarea name="" id="" cols="40" rows="5" placeholder="Напишите что-нибудь..."></textarea>
+						<button type="submit" name="button" class="btn-form-submit">Отправить</button>
+					</form>
+				</div>
 				<img src="#" alt="иконка мороженки местоположения">
 			</div>
+
 
 		</section>
   	</main>
@@ -243,10 +296,10 @@
 
 		<section class="footer-info">
 			<img src="#" alt="сердечко">
-			<b><a href="#">Для поставщиков</a></b>
-			<a href="#">О производстве</a>
-			<a href="#">Наши документы</a>
-			<a href="#">Экологические стандарты</a>
+			<b><a href="#" class="provider-info">Для поставщиков</a></b>
+			<a href="#" class="about-info">О производстве</a>
+			<a href="#" class="about-info">Наши документы</a>
+			<a href="#" class="about-info">Экологические стандарты</a>
 		</section>
 
 		<section class="htmlacademy">
@@ -258,7 +311,7 @@
 		</section>
     </footer>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
+    <p class="academy">Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
 
   </body>
 </html>
