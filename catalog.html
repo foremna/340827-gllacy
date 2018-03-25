@@ -51,8 +51,11 @@
 		  					</form>
 		  				</div>
 
-					<a href="#" class="basket-ice">2 товара</a>
-				</div>
+						<a href="#" class="basket-ice">
+		  					<span class="visually-hidden">корзина</span>
+							<span>2 товара</span>
+		  				</a>
+					</div>
 	  			<div class="main-basket"> <!-- Корзина -->
 	  				
 	  				<ul>
@@ -82,213 +85,243 @@
 	  	</div>
 
   		</nav>
-		<div class="header-info">
-			<b class="time-work">
-  				С 10 до 20, ежедневно
-  			</b>
-  			<br>
-  			<b class="main-phone">
-  				8 812 450-25-25
-  			</b>		
+
+  			<div class="wrapper wrap-info">
   				<div class="road-catalog">
 					<ul>
-						<li><a href="#" class="road-li">Главная</a></li>
-						<li><a href="#" class="road-li">Каталог</a></li>
-						<li><a href="#" class="road-li">Сливочное</a></li>
+						<li class="info-li"><a href="#" class="road-li">Главная</a></li>
+						<li class="info-li">»</li>
+						<li class="info-li"><a href="#" class="road-li">Каталог</a></li>
+						<li class="info-li">»</li>
+						<li class="info-li"><a href="#" class="road-li">Сливочное</a></li>
 					</ul>
 				</div>
-		</div>
-  	</header>
+				<div class="header-info">
+					<b class="time-work">
+	  					С 10 до 20, ежедневно
+	  				</b>
+	  				<br>
+	  				<b class="main-phone">
+	  					8 812 450-25-25
+	  				</b>
+				</div>
+			</div>
 
 	<main class="catalog">
 
 		<section class="info-setting">
-			<p class="ice-sundae">Сливочное мороженое</p>
-			<div class="setting-streamline">
-			<p class="streamline">Сортировка:</p>
-			<select name="streamline" id="" class="setting-select">
-				<option value="population" class="streamline-item">по популярности</option>
-				<option value="cheap" class="streamline-item">сначала недорогие</option>
-				<option value="dear" class="streamline-item">сначала дорогие</option>
-				<option value="fatnesses" class="streamline-item">по жирности</option>
-			</select>
-			</div>
-			
-			<div class="setting-regulation">
-				<p class="reg-price">Цена: 100 руб. – 500 руб</p>
-				<input type="range" name="price" id="">
+            
+            <div class="wrapper">
+            	<p class="ice-sundae">Сливочное мороженое</p>
 			</div>
 
-			<div class="setting-fatnesses">
-				<p class="fatnesses">Жирность:
-					<p class="fatnesses-item"><input type="radio" name="fatnesses" id="">0%</p>
-					<p class="fatnesses-item"><input type="radio" name="fatnesses" id="">до 10%</p>
-					<p class="fatnesses-item"><input type="radio" name="fatnesses" id="">до 30%</p>
-					<p class="fatnesses-item"><input type="radio" name="fatnesses" id="">выше 30%</p>
-				</p>
+			<div class="wrapper wrap-setting">
+				
+				<div class="setting-streamline">
+				<p class="streamline">Сортировка:</p>
+				<select name="streamline" id="" class="setting-select">
+					<option value="population" class="streamline-item">по популярности</option>
+					<option value="cheap" class="streamline-item">сначала недорогие</option>
+					<option value="dear" class="streamline-item">сначала дорогие</option>
+					<option value="fatnesses" class="streamline-item">по жирности</option>
+				</select>
+				</div>
+
+			
+				<div class="setting-regulation">
+					<p class="reg-price">Цена: 100 руб. – 500 руб</p>
+					<input type="range" name="price" id="">
+				</div>
+
+				<div class="setting-fatnesses">
+					<p class="fatnesses">Жирность:
+						<p class="fatnesses-item"><input type="radio" name="fatnesses" id="">0%</p>
+						<p class="fatnesses-item"><input type="radio" name="fatnesses" id="">до 10%</p>
+						<p class="fatnesses-item"><input type="radio" name="fatnesses" id="">до 30%</p>
+						<p class="fatnesses-item"><input type="radio" name="fatnesses" id="">выше 30%</p>
+					</p>
+				</div>
+
+				<div class="setting-fillers">
+					<p class="fillers">Наполнители:</p>
+						<p class="fillers-item"><input type="checkbox" name="icecream" id="">шоколадные</p>
+						<p class="fillers-item"><input type="checkbox" name="icecream" id="">сахарные присыпки</p>
+						<p class="fillers-item"><input type="checkbox" name="icecream" id="">фрукты</p>
+						<p class="fillers-item"><input type="checkbox" name="icecream" id="">сиропы</p>
+						<p class="fillers-item"><input type="checkbox" name="icecream" id="">джемы</p>
+				</div>
+			
+				<div class="setting-button">
+					<button class="apply-btn">Применить</button>
+				</div>
+
 			</div>
 
-			<div class="setting-fillers">
-				<p class="fillers">Наполнители:</p>
-					<p class="fillers-item"><input type="checkbox" name="icecream" id="">шоколадные</p>
-					<p class="fillers-item"><input type="checkbox" name="icecream" id="">сахарные присыпки</p>
-					<p class="fillers-item"><input type="checkbox" name="icecream" id="">фрукты</p>
-					<p class="fillers-item"><input type="checkbox" name="icecream" id="">сиропы</p>
-					<p class="fillers-item"><input type="checkbox" name="icecream" id="">джемы</p>
-			</div>
-			
-			<div class="setting-button">
-				<button class="apply-btn">Применить</button>
-			</div>
-			
 		</section>
 
 		<section class="main-catalog">
 
-			<div>
-				<img src="img/ic-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"></img>
-				<b>
-					310₽/
-				</b>
-				<small>
-					кг
-				</small>
+            <div class="wrapper wrap-catalog">
+
+				<div class="ice-item">
+					<img src="img/ic-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"></img>
+					<b>
+						310₽
+					</b>
+					<small>
+						/кг
+					</small>
+					<span>
+						Сливочное с апельсиновым джемом и цитрусовой стружкой
+					</span>
+					<a href="#" class="btn-hit-ice">Быстрый просмотр</a>
+				</div>
+				<div class="ice-item">
+					<img src="img/ic-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада"></img>
+					<b>
+						380₽
+					</b>
+					<small>
+						/кг
+					</small>
+					<span>
+						Сливочно-кофейное с кусочками шоколада
+					</span>
+					<a href="#" class="btn-hit-ice">Быстрый просмотр</a>
+				</div>
+				<div class="ice-item">
+					<img src="img/ic-3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада"></img>
+					<b>
+						355₽
+					</b>
+					<small>
+						/кг
+					</small>
+					<span>
+						Сливочно-клубничное с присыпкой из белого шоколада
+					</span>
+					<a href="#" class="btn-hit-ice">Быстрый просмотр</a>
+				</div>
+				<div class="ice-item">
+					<img src="img/ic-4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой"></img>
+					<b>
+						415₽
+					</b>
+					<small>
+						/кг
+					</small>
+					<span>
+						Сливочное крем-брюле с карамельной подливкой
+					</span>
+					<a href="#" class="btn-hit-ice">Быстрый просмотр</a>
+				</div>
+				<div class="ice-item">
+					<img src="img/ic-5.jpg" width="267" height="267" alt="Сливочное с брусничным джемом"></img>
+					<b>
+						325₽
+					</b>
+					<small>
+						/кг
+					</small>
+					<span>
+						Сливочное с брусничным джемом
+					</span>
+					<a href="#" class="btn-hit-ice">Быстрый просмотр</a>
+				</div>
+				<div class="ice-item">
+					<img src="img/ic-6.jpg" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники"></img>
+					<b>
+						410₽
+					</b>
+					<small>
+						/кг
+					</small>
+					<span>
+						Сливочно-черничное с цельными ягодами черники
+					</span>
+					<a href="#" class="btn-hit-ice">Быстрый просмотр</a>
+				</div>
+				<div class="ice-item">
+					<img src="img/ic-7.jpg" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой"></img>
+					<b>
+						375₽
+					</b>
+					<small>
+						/кг
+					</small>
+					<span>
+						Сливочно-лимонное с карамельной присыпкой
+					</span>
+					<a href="#" class="btn-hit-ice">Быстрый просмотр</a>
+				</div>
+				<div class="ice-item">
+					<img src="img/ic-8.jpg" width="267" height="267" alt="Сливочное с шоколадной стружкой"></img>
+					<b>
+						320₽
+					</b>
+					<small>
+						/кг
+					</small>
 				<span>
-					Сливочное с апельсиновым джемом и цитрусовой стружкой
-				</span>
-			</div>
-			<div>
-				<img src="img/ic-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада"></img>
-				<b>
-					380₽/
-				</b>
-				<small>
-					кг
-				</small>
-				<span>
-					Сливочно-кофейное с кусочками шоколада
-				</span>
-			</div>
-			<div>
-				<img src="img/ic-3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада"></img>
-				<b>
-					355₽/
-				</b>
-				<small>
-					кг
-				</small>
-				<span>
-					Сливочно-клубничное с присыпкой из белого шоколада
-				</span>
-			</div>
-			<div>
-				<img src="img/ic-4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой"></img>
-				<b>
-					415₽/
-				</b>
-				<small>
-					кг
-				</small>
-				<span>
-					Сливочное крем-брюле с карамельной подливкой
-				</span>
-			</div>
-			<div>
-				<img src="img/ic-5.jpg" width="267" height="267" alt="Сливочное с брусничным джемом"></img>
-				<b>
-					325₽/
-				</b>
-				<small>
-					кг
-				</small>
-				<span>
-					Сливочное с брусничным джемом
-				</span>
-			</div>
-			<div>
-				<img src="img/ic-6.jpg" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники"></img>
-				<b>
-					410₽/
-				</b>
-				<small>
-					кг
-				</small>
-				<span>
-					Сливочно-черничное с цельными ягодами черники
-				</span>
-			</div>
-			<div>
-				<img src="img/ic-7.jpg" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой"></img>
-				<b>
-					375₽/
-				</b>
-				<small>
-					кг
-				</small>
-				<span>
-					Сливочно-лимонное с карамельной присыпкой
-				</span>
-			</div>
-			<div>
-				<img src="img/ic-8.jpg" width="267" height="267" alt="Сливочное с шоколадной стружкой"></img>
-				<b>
-					320₽/
-				</b>
-				<small>
-					кг
-				</small>
-				<span>
-					Сливочное с шоколадной стружкой
-				</span>
-			</div>
-			<div>
-				<img src="img/ic-9.jpg" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада"></img>
-				<b>
-					440₽/
-				</b>
-				<small>
-					кг
-				</small>
-				<span>
-					Сливочно-ванильное с кусочками шоколада
-				</span>
-			</div>
-			<div>
-				<img src="img/ic-10.jpg" width="267" height="267" alt="Сливочноe с ментоловым сиропом"></img>
-				<b>
-					435₽/
-				</b>
-				<small>
-					кг
-				</small>
-				<span>
-					Сливочноe с ментоловым сиропом
-				</span>
-			</div>
-			<div>
-				<img src="img/ic-11.jpg" width="267" height="267" alt="Сливочное с кусочками черного шоколада"></img>
-				<b>
-					355₽/
-				</b>
-				<small>
-					кг
-				</small>
-				<span>
-					Сливочное с кусочками черного шоколада
-				</span>
-			</div>
-			<div>
-				<img src="img/ic-12.jpg" width="267" height="267" alt="Сливочное с мятным сиропом"></img>
-				<b>
-					420₽/
-				</b>
-				<small>
-					кг
-				</small>
-				<span>
-					Сливочное с мятным сиропом
-				</span>
-			</div>
+						Сливочное с шоколадной стружкой
+					</span>
+					<a href="#" class="btn-hit-ice">Быстрый просмотр</a>
+				</div>
+				<div class="ice-item">
+					<img src="img/ic-9.jpg" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада"></img>
+					<b>
+						440₽
+					</b>
+					<small>
+						/кг
+					</small>
+					<span>
+						Сливочно-ванильное с кусочками шоколада
+					</span>
+					<a href="#" class="btn-hit-ice">Быстрый просмотр</a>
+				</div>
+				<div class="ice-item">
+					<img src="img/ic-10.jpg" width="267" height="267" alt="Сливочноe с ментоловым сиропом"></img>
+					<b>
+						435₽
+					</b>
+					<small>
+						/кг
+					</small>
+					<span>
+						Сливочноe с ментоловым сиропом
+					</span>
+					<a href="#" class="btn-hit-ice">Быстрый просмотр</a>
+				</div>
+				<div class="ice-item">
+					<img src="img/ic-11.jpg" width="267" height="267" alt="Сливочное с кусочками черного шоколада"></img>
+					<b>
+						355₽
+					</b>
+					<small>
+					/кг
+					</small>
+					<span>
+						Сливочное с кусочками черного шоколада
+					</span>
+					<a href="#" class="btn-hit-ice">Быстрый просмотр</a>
+				</div>
+				<div class="ice-item">
+					<img src="img/ic-12.jpg" width="267" height="267" alt="Сливочное с мятным сиропом"></img>
+					<b>
+						420₽
+					</b>
+					<small>
+						/кг
+					</small>
+					<span>
+						Сливочное с мятным сиропом
+					</span>
+					<a href="#" class="btn-hit-ice">Быстрый просмотр</a>
+
+				</div>
+
+            </div>
 
 			<div class="catalog-item">
 
