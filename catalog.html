@@ -1,95 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
 	<meta charset="UTF-8">
 	<title>HTML Academy: Глейси</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
-</head>
-<body class="body-catalog">
+  </head>
+  <body class="body-catalog">
+
   	<header class="main-header">
-
+		
   		<nav class="main-navigation">
-  			<img src="img/Logo.png" width="156" height="64" alt="Логотип сайта">
+  			<div class="wrapper">
+  				<div class="navigation">
+		  			<img src="img/logo.svg" width="156" height="64" alt="Логотип сайта">
 
-  			<ul class="site-navigation">
-  				<li><a href="#" class="link link-active">Каталог</a>
-  					<ul>
-  						<li><a href="#" class="nav-link-bold">Новинки</a></li>
-  						<li><a href="#" class="nav-link link-active">Сливочное</a></li>
-  						<li><a href="#" class="nav-link">Щербеты</a></li>
-  						<li><a href="#" class="nav-link">Фруктовый лед</a></li>
-  						<li><a href="#" class="nav-link">Мелорин</a></li>
-  					</ul>
-  				</li>
-  				<li><a href="#">Доставка и оплата</a></li>
-  				<li><a href="#">О Компании</a></li>
-  			</ul>
-  				<a href="#" class="search">Поиск</a>
-  				<div class="user-search-form">
-  					<form action="https://echo.htmlacademy.ru" method="get" class="modal-form-search">
-  						<input type="search" name="search" placeholder="Что ищем?" id="">
-  					</form>
-  				</div>
-  				<a href="#" class="sign-in"><img src="#" alt="вход">Вход</a>
-  				<div class="modal-form-appointment">
-  					<form action="https://echo.htmlacademy.ru" method="get" class="form-appointment">
-  						<input type="email" name="email" placeholder="Электронная почта" required="">
-  						<input type="password" name="password" value="Пароль" required="">
-  						<a href="#" class="sign-link">Войти</a>
-  						<a href="#" class="forgot-password">Забыли пароль?</a>
-  						<a href="#" class="new-account">Новая регистрация</a>
-  					</form>
-  				</div>
+		  			<ul class="site-navigation">
+		  				<li><a href="#" class="link menu link-active"><span>Каталог</span></a>
+		  					<ul class="pulldown">
+		  						<li><a href="#" class="nav-link-bold">Новинки</a></li>
+		  						<li><a href="#" class="nav-link link-active">Сливочное</a></li>
+		  						<li><a href="#" class="nav-link">Щербеты</a></li>
+		  						<li><a href="#" class="nav-link">Фруктовый лед</a></li>
+		  						<li><a href="#" class="nav-link">Мелорин</a></li>
+		  					</ul>
+		  				</li>
+		  				<li><a href="#" class="link menu"><span>Доставка и оплата</span></a></li>
+		  				<li><a href="#" class="link menu"><span>О Компании</span></a></li>
+		  			</ul>
+		  			<div class="modal-links">
+		  				<a href="#" class="search">
+		  					<span class="visually-hidden">поиск</span>
+						</a>
+		  				<div class="user-search-form">
+		  					<form action="https://echo.htmlacademy.ru" method="get" class="modal-form-search">
+		  						<input type="search" name="search" placeholder="Что ищем?" id="">
+		  					</form>
+		  				</div>
+		  				<a href="#" class="sign-in">
+		  					<span class="visually-hidden">вход</span>
+		  					<span>Вход</span>
+		  				</a>
+		  				<div class="modal-form-appointment">
+		  					<form action="https://echo.htmlacademy.ru" method="get" class="form-appointment">
+		  						<input type="email" name="email" placeholder="Электронная почта" required="">
+		  						<input type="password" name="password" value="Пароль" required="">
+		  						<a href="#" class="sign-link">Войти</a>
+		  						<a href="#" class="forgot-password">Забыли пароль?</a>
+		  						<a href="#" class="new-account">Новая регистрация</a>
+		  					</form>
+		  				</div>
 
-  			<b class="time-work">
+					<a href="#" class="basket-ice">2 товара</a>
+				</div>
+	  			<div class="main-basket"> <!-- Корзина -->
+	  				
+	  				<ul>
+	  					<li>
+							<p>x</p>
+	  						<img src="#" alt="Пломбир с апельсиновым джемом">
+	  						<span>Пломбир с апельсиновым джемом</span>
+	  						<span>1,5 кг х </span>
+	  						<small>200 руб.</small>
+	  						<b>300 руб.</b>
+	  					</li>
+	  					<li>
+	  						<p>x</p>
+	  						<img src="#" alt="Клубничный пломбир с присыпкой из белого шоколада">
+	  						<span>Клубничный пломбир с присыпкой из белого шоколада</span>
+	  						<span>1,5 кг х </span>
+	  						<small>300 руб.</small>
+	  						<b>450 руб.</b>
+	  					</li>
+	  				</ul>
+					<b class="total">Итого:</b>
+					<b class="total">750 руб.</b>
+					<button class="formalize-btn">Оформить заказ</button>
+					
+	  			</div>
+	  		</div>
+	  	</div>
+
+  		</nav>
+		<div class="header-info">
+			<b class="time-work">
   				С 10 до 20, ежедневно
   			</b>
   			<br>
   			<b class="main-phone">
   				8 812 450-25-25
-  			</b>
-
-			<a href="#" class="basket-ice"><img src="#" alt="два товара в корзине">2 товара</a>
-  			<div class="main-basket"> <!-- Корзина -->
-  				
-  				<ul>
-  					<li>
-						<p>x</p>
-  						<img src="#" alt="Пломбир с апельсиновым джемом">
-  						<span>Пломбир с апельсиновым джемом</span>
-  						<span>1,5 кг х </span>
-  						<small>200 руб.</small>
-  						<b>300 руб.</b>
-  					</li>
-  					<li>
-  						<p>x</p>
-  						<img src="#" alt="Клубничный пломбир с присыпкой из белого шоколада">
-  						<span>Клубничный пломбир с присыпкой из белого шоколада</span>
-  						<span>1,5 кг х </span>
-  						<small>300 руб.</small>
-  						<b>450 руб.</b>
-  					</li>
-  				</ul>
-				<b class="total">Итого:</b>
-				<b class="total">750 руб.</b>
-				<button class="formalize-btn">Оформить заказ</button>
-				
-  			</div>
-
-  		</nav>
-
+  			</b>		
+  				<div class="road-catalog">
+					<ul>
+						<li><a href="#" class="road-li">Главная</a></li>
+						<li><a href="#" class="road-li">Каталог</a></li>
+						<li><a href="#" class="road-li">Сливочное</a></li>
+					</ul>
+				</div>
+		</div>
   	</header>
 
 	<main class="catalog">
-
-		<div class="road-catalog">
-			<ul>
-				<li><a href="#" class="road-li">Главная</a></li>
-				<li><a href="#" class="road-li">Каталог</a></li>
-				<li><a href="#" class="road-li">Сливочное</a></li>
-			</ul>
-		</div>
 
 		<section class="info-setting">
 			<p class="ice-sundae">Сливочное мороженое</p>
