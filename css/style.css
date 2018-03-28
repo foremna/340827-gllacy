@@ -579,6 +579,7 @@ a.bold:active{
 	/* Анимация */
 
 	/* Разное */
+	z-index: 3;
 }
 .modal-form-appointment input[type="email"],
 input[type="password"]{
@@ -986,12 +987,13 @@ b.total{
 	font-size: 18px;
 	line-height: 24px;
 	font-weight: bold;
-
+    font-family: 'Roboto', "Arial", sans-serif;
 	/* Оформление */
 	background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
     background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
     background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
     box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+    border: none;
 	/* Анимация */
 
 	/* Разное */
@@ -1512,7 +1514,67 @@ p.ice-sundae{
 	display: block;
 	
 }
-/*ПАГИНАТОР ДОБАВИТЬ!!!*/
+.wrap-pug ul{
+	/* Позиционирование */
+	
+	/* Блочная модель */
+	display: flex;
+	padding: 0;
+    margin: 40px 0;
+    margin-left: auto;
+	/* Типографика */
+
+	/* Оформление */
+	
+	/* Анимация */
+
+	/* Разное */
+    list-style-type: none;
+    
+}
+.paginator{
+	/* Позиционирование */
+	
+	/* Блочная модель */
+	display: block;
+	padding: 4px 8px 3px;
+	margin-right: 3px;
+	/* Типографика */
+    font-size: 16px;
+	line-height: 18px;
+	color: #ffffff;
+	text-decoration: none;
+	/* Оформление */
+	border-radius: 50%;
+	/* Анимация */
+
+	/* Разное */
+}
+.paginator img{
+	padding-top: 2px;
+}
+.paginator:hover{
+	background-color: rgba(255, 255, 255, .2);
+	color: #ffffff;
+}
+.pug-active{
+	background-color: #fff;
+	color: #323232;
+}
+.wrap-pug{
+    /* Позиционирование */
+	
+	/* Блочная модель */
+	display: flex;
+	
+	/* Типографика */
+
+	/* Оформление */
+	
+	/* Анимация */
+
+	/* Разное */
+}
 
 .time-work{
 	/* Позиционирование */
@@ -2523,7 +2585,7 @@ a.subscribe-link:active {
 	/* Позиционирование */
 	
 	/* Блочная модель */
-    width: 277px;
+    width: 252px;
     margin-left: auto;
     padding: 30px 26px;
 	/* Типографика */
@@ -2623,6 +2685,7 @@ a.subscribe-link:active {
 	font-size: 18px;
 	line-height: 24px;
 	font-weight: bold;
+    font-family: 'Roboto', "Arial", sans-serif;
 
 	/* Оформление */
 	background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
@@ -2632,6 +2695,7 @@ a.subscribe-link:active {
 	/* Анимация */
 
 	/* Разное */
+	border: none;
 }
 
 .btn-form-map:hover{
@@ -2671,6 +2735,7 @@ a.subscribe-link:active {
     background-image: -webkit-linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
     background-image: -ms-linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
     box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24, 0.004);
+    border: none;
 
 	/* Анимация */
 
@@ -2682,13 +2747,14 @@ a.subscribe-link:active {
 	position: fixed;
 	top: 50%;
 	left: 50%;
-	
 	/* Блочная модель */
-	display: none;
     width: 420px;
 	padding: 14px 18px 25px;
 	margin-left: -210px;
 	margin-top: -221px;
+
+	display: none;
+	
 	/* Типографика */
 	font-size: 24px;
 	line-height: 28px;
@@ -2701,6 +2767,7 @@ a.subscribe-link:active {
 	/* Анимация */
 
 	/* Разное */
+	z-index: 50;
 }
 .modal-contacts::before{
     /* Позиционирование */
@@ -2741,14 +2808,39 @@ a.subscribe-link:active {
 
 	/* Разное */
 }
+.modal-contacts-overlay{
+	/* Позиционирование */
+	position: fixed;
+	top: 0;
+	left: 0;
+	/* Блочная модель */
+	width: 100%;
+	height: 100%;
 
+	display: none;
+	
+	/* Типографика */
+
+	/* Оформление */
+	background-color: rgba(0, 0, 0, .3);
+	/* Анимация */
+
+	/* Разное */
+    z-index: 40;
+}
+.modal-form-contacts textarea{
+	width: 388px;
+}
 .btn-form-submit{
 	/* Позиционирование */
 	
 	/* Блочная модель */
 	border-radius: 35px;
 	padding: 10px 24px;
+	display: block;
+	margin-left: auto;
 	/* Типографика */
+	font-family: 'Roboto', "Arial", sans-serif;
 	color: #ffffff;
 	font-size: 18px;
 	line-height: 24px;
@@ -2759,6 +2851,7 @@ a.subscribe-link:active {
     background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
     background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
     box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+    border: none;
 	/* Анимация */
 
 	/* Разное */
@@ -2844,10 +2937,17 @@ a.subscribe-link:active {
     
 }
 .social-button{
-	fill-opacity: 0.8;
-	stroke: #ffffff;
-	stroke-width: 3;
-	stroke-opacity: 0.5;
+	display: block;
+}
+.social-button svg{
+	fill: rgba(255, 255, 255, .8);
+	border: 3px solid rgba(255, 255, 255, .4);
+	border-radius: 50%;
+}
+.social-button svg:hover{
+	fill: #ffffff;
+	border: 3px solid rgba(255, 255, 255, .7);
+	border-radius: 50%;
 }
 .footer-info{
 	display: flex;
@@ -2871,9 +2971,9 @@ a.subscribe-link:active {
 }
 .provider-info{
 	/* Позиционирование */
-	
+	position: relative;
 	/* Блочная модель */
-
+	width: 165px;
 	/* Типографика */
 	font-size: 13px;
 	line-height: 18px;
@@ -2885,17 +2985,10 @@ a.subscribe-link:active {
 
 	/* Разное */
 }
-
-.bold-pro{
-	position: relative;
-	width: 165px;
-}
-
-.bold-pro::before{
+.provider-info::before{
     /* Позиционирование */
     position: absolute;
-    
-    top: 7px;
+    top: 3px;
     left: -20px;
 	/* Блочная модель */
 	width: 15px;
@@ -2934,4 +3027,9 @@ a.subscribe-link:active {
 }
 .htmlacademy p{
 	margin: 0;
+}
+.htmlacademy a{
+	color: #ffffff;
+	text-decoration: underline;
+	
 }
