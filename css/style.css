@@ -455,6 +455,7 @@ a.bold:active{
 
 	/* Разное */
 }
+
 .user-search-form{
 	/* Позиционирование */
     position: absolute;
@@ -1438,6 +1439,7 @@ p.ice-sundae{
 	font-size: 45px;
 	line-height: 45px;
 	color: #ffffff;
+	text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
 	/* Оформление */
 
 	/* Анимация */
@@ -1456,6 +1458,7 @@ p.ice-sundae{
 	font-size: 30px;
 	line-height: 45px;
 	color: #ffffff;
+	text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
 	/* Оформление */
 
 	/* Анимация */
@@ -1908,9 +1911,9 @@ a.button-slides:active {
 	/* Типографика */
 	
 	/* Оформление */
+	background-color: #b2042c;
 	background-image: url(../img/raspberry-background.png);
 	background-repeat: no-repeat;
-	
 	/* Анимация */
 
 	/* Разное */
@@ -1924,10 +1927,9 @@ a.button-slides:active {
 	/* Типографика */
 	
 	/* Оформление */
+	background-color: #5a3519;
 	background-image: url(../img/chocolate-background.png);
 	background-repeat: no-repeat;
-	
-	
 	/* Анимация */
 
 	/* Разное */
@@ -2102,6 +2104,7 @@ a.action-btn:active {
 	font-size: 45px;
 	line-height: 45px;
 	color: #ffffff;
+	text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
 	/* Оформление */
 
 	/* Анимация */
@@ -2120,6 +2123,7 @@ a.action-btn:active {
 	font-size: 30px;
 	line-height: 45px;
 	color: #ffffff;
+	text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
 	/* Оформление */
 
 	/* Анимация */
