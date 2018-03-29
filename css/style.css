@@ -92,7 +92,9 @@ a:active{
     margin-right: 0;
 }
 
-
+.main-header{
+	padding: 10px 0 0;
+}
 .main-navigation .logo{
 	/* Позиционирование */
 	margin-right: 10px;
@@ -160,14 +162,14 @@ a:active{
 	/* Типографика */
 
 	/* Оформление */
-	border-bottom: 1px solid #b1c8bb;
+	border-bottom: 1px solid rgba(255, 255, 255, .2);
 	/* Анимация */
 
 	/* Разное */
 }
-.site-navigation li a.link-active span,
-.site-navigation li a.link-active span:hover,
-.site-navigation li span:hover{
+.site-navigation li a.link-active,
+.site-navigation li a.link-active:hover,
+.site-navigation li:hover{
 	/* Позиционирование */
 
 	/* Блочная модель */
@@ -222,9 +224,9 @@ ul.pulldown{
 }
 .menu{
 	/* Позиционирование */
-	padding: 6px 14px;
+	
 	/* Блочная модель */
-
+    padding: 6px 14px;
 	/* Типографика */
 
 	/* Оформление */
@@ -567,8 +569,8 @@ a.bold:active{
 .modal-form-appointment{
 	/* Позиционирование */
     position: absolute;
-    top: 63px;
-    right: 250px;
+    top: 53px;
+    right: 110px;
 	/* Блочная модель */
 	display: none;
 	width: 239px;
@@ -608,7 +610,7 @@ input[type="password"]{
 .modal-form-appointment input[type="password"]{
 	margin-top: 10px;
 }
-.sign-in:hover .modal-form-appointment{
+.sign-in:hover + .modal-form-appointment{
 	display: block;
 }
 .flex-sign{
@@ -626,11 +628,10 @@ input[type="password"]{
 
 	/* Разное */
 }
-a.sign-link{
+.sign-link{
 	/* Позиционирование */
 	
 	/* Блочная модель */
-	width: 50px;
 	display: block;
 	border-radius: 35px;
 	padding: 10px 25px;
@@ -645,12 +646,13 @@ a.sign-link{
     background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
     background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
     box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+    border: none;
 	/* Анимация */
 
 	/* Разное */
 }
 
-a.sign-link:hover{
+.sign-link:hover{
 	/* Позиционирование */
 	
 	/* Блочная модель */
@@ -672,7 +674,7 @@ a.sign-link:hover{
 
 
 }
-a.sign-link:active {
+.sign-link:active {
 	/* Позиционирование */
 	
 	/* Блочная модель */
@@ -734,7 +736,7 @@ a.new-account{
 .basket:focus path{
 	fill: #000000;
 }
-a.basket{
+.basket{
 	/* Позиционирование */
     position: relative;
 	padding-left: 43px;
@@ -751,7 +753,7 @@ a.basket{
 
 	/* Разное */
 }
-a.basket:hover{
+.basket:hover{
 	/* Позиционирование */
 
 	/* Блочная модель */
@@ -768,7 +770,7 @@ a.basket:hover{
 	/* Разное */
 }
 
-a.basket-ice{
+.basket-ice{
 	/* Позиционирование */
     position: relative;
     padding-left: 43px;
@@ -818,7 +820,9 @@ a.basket-ice:hover{
 
 	/* Разное */
 }
-
+.basket-ice:hover + .main-basket{
+	display: block;
+}
 .main-basket ul{
 	padding: 0;
 	margin: 0;
@@ -875,6 +879,7 @@ a.basket-ice:hover{
 .main-basket ul{
 	list-style-type: none;
 }
+
 .item-basket{
 	/* Позиционирование */
     position: relative;
@@ -1072,7 +1077,7 @@ b.total{
 	line-height: 16px;
 	font-weight: 400;
 	color: #ffffff;
-	border-bottom: 1px solid #b1c8bb
+	border-bottom: 1px solid rgba(255, 255, 255, .2);
 	
 	/* Оформление */
 	
@@ -1152,6 +1157,7 @@ p.ice-sundae{
 	display: block;
 	margin-bottom: 5px;
 	margin-top: 0;
+	margin-left: 15px;
 	/* Типографика */
 	font-size: 14px;
 	line-height: 16px;
@@ -1184,9 +1190,43 @@ p.ice-sundae{
 }
 .setting-select{
 	/* Позиционирование */
+	position: relative;
+	/* Блочная модель */ 
+    padding: 8px 25px 8px 15px;
+	/* Типографика */
+    font-size: 16px;
+	line-height: 18px;
+	font-weight: 500;
+	color: #ffffff;
+	/* Оформление */ 
+    -webkit-appearance: none;
+    -moz-appearance:    none;
+    appearance:         none;
+    border-radius: 20px;
+    background-color: rgba(248, 247, 244, 0.2);
+    background-image: url(../img/select-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: 165px center;
+	/* Анимация */
+
+	/* Разное */	
+}
+.setting-select:hover{
+	background-image: url(../img/select-arrow-hover.jpg);
+	background-color: #ffffff;
+	color: #000000;
+	
+}
+.set-stream{
+	padding: 0;
+}
+.range-cost{
+	/* Позиционирование */
+	position: relative;
 	
 	/* Блочная модель */ 
-    padding: 7px 25px 7px 15px;
+	width: 219px;
+	height: 36px;
 	/* Типографика */
 
 	/* Оформление */ 
@@ -1195,12 +1235,107 @@ p.ice-sundae{
 
 	/* Разное */	
 }
-.set-stream{
-	width: 165px;
+.scale{
+	/* Позиционирование */
+	position: absolute;
+	top: 16px;
+	left: 21px;
+	/* Блочная модель */ 
+	width: 176px;
+	height: 4px;
+	/* Типографика */
+
+	/* Оформление */ 
+	background-color:rgba(255, 255, 255, .5);
+	/* Анимация */
+
+	/* Разное */	
 }
-.set-ran{
-	width: 182px;
+.field{
+	/* Позиционирование */
+	position: absolute;
+	top: 16px;
+	left: 38px;
+	/* Блочная модель */ 
+	width: 107px;
+	height: 4px;
+	/* Типографика */
+
+	/* Оформление */ 
+	background-color:rgba(255, 255, 255, 1);
+	/* Анимация */
+
+	/* Разное */	
 }
+.toggle-first{
+	/* Позиционирование */
+	position: absolute;
+	top: 8px;
+	left: 36px;
+	/* Блочная модель */ 
+	width: 20px;
+	height: 20px;
+	/* Типографика */
+
+	/* Оформление */ 
+	background-color:rgba(255, 255, 255, 1);
+	border-radius: 50%;
+	/* Анимация */
+
+	/* Разное */	
+}
+.toggle-end{
+	/* Позиционирование */
+	position: absolute;
+	top: 8px;
+	left: 133px;
+	/* Блочная модель */ 
+	width: 20px;
+	height: 20px;
+	/* Типографика */
+
+	/* Оформление */ 
+	background-color:rgba(255, 255, 255, 1);
+	border-radius: 50%;
+	/* Анимация */
+
+	/* Разное */	
+}
+.toggle-center-first{
+	/* Позиционирование */
+	position: absolute;
+	top: 16px;
+	left: 44px;
+	/* Блочная модель */ 
+	width: 4px;
+	height: 4px;
+	/* Типографика */
+
+	/* Оформление */ 
+	background-color: #b1b1b1;
+	border-radius: 50%;
+	/* Анимация */
+
+	/* Разное */	
+}
+.toggle-center-end{
+	/* Позиционирование */
+	position: absolute;
+	top: 16px;
+	left: 141px;
+	/* Блочная модель */ 
+	width: 4px;
+	height: 4px;
+	/* Типографика */
+
+	/* Оформление */ 
+	background-color: #b1b1b1;
+	border-radius: 50%;
+	/* Анимация */
+
+	/* Разное */	
+}
+
 .fatnesses-item label {
 	/* Позиционирование */
 	position: relative;
@@ -1455,6 +1590,7 @@ p.ice-sundae{
 
 	/* Типографика */
 	font-size: 45px;
+	font-weight: 800;
 	line-height: 45px;
 	color: #ffffff;
 	text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
@@ -1484,7 +1620,7 @@ p.ice-sundae{
 	/* Разное */
 
 }
-.ice-item span{
+.ice-item a{
 	/* Позиционирование */
 	
 	/* Блочная модель */
@@ -1496,11 +1632,13 @@ p.ice-sundae{
 	color: #ffffff;
 	text-align: center;
 	/* Оформление */
-    text-decoration: underline;
 	/* Анимация */
 
 	/* Разное */
 
+}
+.ice-item span{
+	border-bottom: 1px solid rgba(255, 255, 255, .2);
 }
 .ice-item::before{
 	/* Позиционирование */
@@ -1919,6 +2057,7 @@ a.button-slides:active {
 .action-raspberry,
 .action-chocolate{
 	min-height: 195px;
+	border-radius: 17px;
 }
 .action-raspberry{
 	/* Позиционирование */
@@ -2120,6 +2259,7 @@ a.action-btn:active {
 
 	/* Типографика */
 	font-size: 45px;
+	font-weight: 800;
 	line-height: 45px;
 	color: #ffffff;
 	text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
@@ -2149,7 +2289,7 @@ a.action-btn:active {
 	/* Разное */
 
 }
-.popular-item span{
+.popular-item a{
 	/* Позиционирование */
 	
 	/* Блочная модель */
@@ -2161,11 +2301,14 @@ a.action-btn:active {
 	color: #ffffff;
 	text-align: center;
 	/* Оформление */
-    text-decoration: underline;
+	
 	/* Анимация */
 
 	/* Разное */
 
+}
+.popular-item span{
+	border-bottom: 1px solid rgba(255, 255, 255, .2);
 }
 .popular-item::before{
 	/* Позиционирование */
@@ -2984,6 +3127,9 @@ a.subscribe-link:active {
 	display: flex;
 	width: 340px;
 	flex-wrap: wrap;
+}
+.footer-info span{
+	border-bottom: 1px solid rgba(255, 255, 255, .2);
 }
 .about-info{
 	/* Позиционирование */
