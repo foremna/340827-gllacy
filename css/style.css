@@ -459,8 +459,8 @@ a.bold:active{
 .user-search-form{
 	/* Позиционирование */
     position: absolute;
-    top: 60px;
-    right: 350px;
+    top: 36px;
+    right: 0px;
 	/* Блочная модель */
 	display: none;
 	width: 312px;
@@ -473,6 +473,7 @@ a.bold:active{
 	/* Анимация */
 
 	/* Разное */
+	z-index: 3;
 }
 .user-search-form input[type="search"]{
 	/* Позиционирование */
@@ -489,6 +490,9 @@ a.bold:active{
 	/* Анимация */
 
 	/* Разное */
+}
+.search:hover .user-search-form{
+	display: block;
 }
 .sign-in{
 	/* Позиционирование */
@@ -562,12 +566,11 @@ a.bold:active{
 }
 .modal-form-appointment{
 	/* Позиционирование */
-	display: none;
-	
     position: absolute;
     top: 63px;
     right: 250px;
 	/* Блочная модель */
+	display: none;
 	width: 239px;
 	padding: 0 20px;
 	padding-top: 20px;
@@ -605,7 +608,9 @@ input[type="password"]{
 .modal-form-appointment input[type="password"]{
 	margin-top: 10px;
 }
-
+.sign-in:hover .modal-form-appointment{
+	display: block;
+}
 .flex-sign{
 	/* Позиционирование */
 	
@@ -1176,6 +1181,19 @@ p.ice-sundae{
 	/* Анимация */
 
 	/* Разное */
+}
+.setting-select{
+	/* Позиционирование */
+	
+	/* Блочная модель */ 
+    padding: 7px 25px 7px 15px;
+	/* Типографика */
+
+	/* Оформление */ 
+
+	/* Анимация */
+
+	/* Разное */	
 }
 .set-stream{
 	width: 165px;
@@ -2681,8 +2699,10 @@ a.subscribe-link:active {
 	/* Позиционирование */
 	
 	/* Блочная модель */
+	display: block;
+	width: 100%;	
 	border-radius: 35px;
-	padding: 10px 28px;
+	padding: 10px;
 	margin-top: 25px;
 	/* Типографика */
 	color: #ffffff;
@@ -2953,6 +2973,13 @@ a.subscribe-link:active {
 	border: 3px solid rgba(255, 255, 255, .7);
 	border-radius: 50%;
 }
+.social-button svg:active{
+	fill: rgba(255, 255, 255, .8);
+	border: 3px solid rgba(255, 255, 255, .7);
+	border-radius: 50%;
+	box-shadow: inset 0 2px 1px #888;
+}
+
 .footer-info{
 	display: flex;
 	width: 340px;
