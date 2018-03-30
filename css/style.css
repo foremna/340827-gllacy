@@ -90,6 +90,7 @@ a:active{
 .header-info{
 	margin-left: auto;
     margin-right: 0;
+    line-height: 11px;
 }
 
 .main-header{
@@ -1759,10 +1760,10 @@ p.ice-sundae{
 	/* Позиционирование */
 	
 	/* Блочная модель */
-
+	display: block;
+    padding-top: 10px;
 	/* Типографика */
 	font-size: 22px;
-	line-height: 24px;
 	color: #ffffff;
 	/* Оформление */
 	
@@ -1814,7 +1815,8 @@ p.ice-sundae{
 	width: 700px;
 	margin: 0 auto;
 	margin-bottom: 39px;
-	padding-top: 275px;
+	padding-top: 282px;
+	padding-right: 8px;
 	/* Типографика */
     font-size: 60px;
     font-weight: bold;
@@ -2096,13 +2098,14 @@ a.button-slides:active {
 	/* Разное */
 }
 .container-action{
-	margin-top: 37px;
+	margin-top: 49px;
 }
 .container-action h2{
 	/* Позиционирование */
 	
 	/* Блочная модель */
     margin: 0;
+    margin-bottom: 15px;
 	/* Типографика */
 	font-size: 35px;
 	line-height: 41px;
@@ -2118,7 +2121,9 @@ a.button-slides:active {
 	/* Позиционирование */
 	
 	/* Блочная модель */
-    padding-bottom: 22px;
+	width: 515px;
+    padding-bottom: 11px;
+    margin-top: 0;
 	/* Типографика */
 	font-size: 18px;
 	line-height: 22px;
@@ -2136,7 +2141,7 @@ a.action-btn{
 	/* Блочная модель */
 	display: block;
 	margin: 0;
-	margin-top: 23px;
+	margin-top: 33px;
 	margin-left: auto;
 	border-radius: 35px;
 	padding: 10px 20px;
@@ -2213,7 +2218,7 @@ a.action-btn:active {
 	/* Блочная модель */
 	display: flex;
 	justify-content: space-between;
-	margin-top: 36px;
+	margin-top: 39px;
 	/* Типографика */
 
 	/* Оформление */
@@ -2258,7 +2263,7 @@ a.action-btn:active {
 	/* Позиционирование */
 	position: absolute;
 	top: 210px;
-	left: 13px;
+	left: 1px;
 	/* Блочная модель */
 
 	/* Типографика */
@@ -2277,8 +2282,8 @@ a.action-btn:active {
 .popular-item small{
 	/* Позиционирование */
 	position: absolute;
-	top: 210px;
-	left: 125px;
+	top: 214px;
+	left: 114px;
 	/* Блочная модель */
 
 	/* Типографика */
@@ -2299,7 +2304,7 @@ a.action-btn:active {
 	
 	/* Блочная модель */
     display: block;
-    margin-top: 15px;
+    margin-top: 10px;
 	/* Типографика */
 	font-size: 16px;
 	line-height: 22px;
@@ -2338,6 +2343,7 @@ a.action-btn:active {
     content: "";
     z-index: -2;
 }
+
 .popular-item:hover{
 	z-index: 1;
 }
@@ -2347,6 +2353,26 @@ a.action-btn:active {
 .popular-item:hover .btn-hit-ice{
 	display: block;
 	
+}
+.popular-item::after{
+	/* Позиционирование */
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	/* Блочная модель */
+    width: 61px;
+	height: 61px;
+	/* Типографика */
+
+	/* Оформление */
+	background-image: url(../img/hit.svg);
+	background-repeat: no-repeat;
+  	background-position: 0 0;
+	/* Анимация */
+
+	/* Разное */
+    content: "";
+    z-index: 3;
 }
 a.btn-hit-ice{
 	/* Позиционирование */
@@ -2430,10 +2456,10 @@ a.btn-hit-ice:active {
 	/* Позиционирование */
 	
 	/* Блочная модель */
-	width: 1141px;
+	width: 1146px;
 	min-height: 308px;
 	margin: 0 auto;
-	margin-top: 40px;
+	margin-top: -4px;
 	display: flex;
 	/* Типографика */
 
