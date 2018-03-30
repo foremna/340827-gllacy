@@ -112,6 +112,7 @@ a:active{
 	/* Позиционирование */
 	padding: 0;
 	margin: 0;
+	margin-bottom: 4px;
 	/* Блочная модель */
 	display: flex;
 	/* Типографика */
@@ -124,7 +125,6 @@ a:active{
 }
 .site-navigation li{
 	/* Позиционирование */
-	margin-right: 1px;
 	position: relative;
 	
 	/* Блочная модель */
@@ -240,7 +240,7 @@ ul.pulldown{
 	/* Позиционирование */
 	margin-left: auto;
 	margin-right: 0;
-	
+	margin-bottom: 5px;
 	/* Блочная модель */
 	display: flex;
 	justify-content: space-between;
@@ -503,7 +503,7 @@ a.bold:active{
 	/* Блочная модель */
 	padding-left: 43px;
 	padding-top: 8px;
-	margin-right: 10px;
+	margin-right: 12px;
 	/* Типографика */
 	font-size: 14px;
 	line-height: 16px;
@@ -514,13 +514,15 @@ a.bold:active{
 
 	/* Разное */
 }
-.sign-in span,
+.sign-in span{
+	padding-right: 16px;
+}
 .basket span,
 .basket-ice span{
 	/* Позиционирование */
 	
 	/* Блочная модель */
-	padding-right: 17px;
+	padding-right: 33px;
 	/* Типографика */
 	/* Оформление */
 	/* Анимация */
@@ -1745,6 +1747,7 @@ p.ice-sundae{
 	font-size: 14px;
 	line-height: 16px;
 	color: #ffffff;
+	padding-left: 9px;
 	/* Оформление */
 	
 	/* Анимация */
@@ -1810,8 +1813,8 @@ p.ice-sundae{
 	/* Блочная модель */
 	width: 700px;
 	margin: 0 auto;
-	margin-bottom: 27px;
-	padding-top: 340px;
+	margin-bottom: 39px;
+	padding-top: 275px;
 	/* Типографика */
     font-size: 60px;
     font-weight: bold;
@@ -1978,8 +1981,8 @@ a.button-slides:active {
 .slide-radio {
 	/* Позиционирование */
 	position: absolute;
-	left: 27px;
-    bottom: 2px;
+	left: 1px;
+    bottom: 12px;
     z-index: 20;
 	/* Блочная модель */
 	display: flex;
