@@ -90,7 +90,8 @@ a:active{
 .header-info{
 	margin-left: auto;
     margin-right: 0;
-    line-height: 11px;
+    line-height: 10px;
+    text-align: right;
 }
 
 .main-header{
@@ -523,7 +524,7 @@ a.bold:active{
 	/* Позиционирование */
 	
 	/* Блочная модель */
-	padding-right: 33px;
+	padding-right: 16px;
 	/* Типографика */
 	/* Оформление */
 	/* Анимация */
@@ -777,7 +778,7 @@ a.new-account{
 	/* Позиционирование */
     position: relative;
     padding-left: 43px;
-	padding-top: 8px;
+	padding-top: 6px;
 	/* Блочная модель */
 
 	/* Типографика */
@@ -794,8 +795,8 @@ a.new-account{
 .basket-ice svg{
 	/* Позиционирование */
 	position: absolute;
-	left: 17px;
-	top: 6px;
+	left: 15px;
+	top: 4px;
 	/* Блочная модель */
 	width: 21px;
 	height: 20px;
@@ -1104,6 +1105,7 @@ p.ice-sundae{
 	
 	/* Блочная модель */
     margin: 0;
+    padding-top: 4px;
     padding-bottom: 25px;
 	/* Типографика */
 	font-size: 35px;
@@ -1141,6 +1143,7 @@ p.ice-sundae{
 	/* Блочная модель */
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 19px;
 	/* Типографика */
 
 	/* Оформление */
@@ -1151,7 +1154,7 @@ p.ice-sundae{
 }
 .catalog-setting{
 	padding-right: 16px;
-	margin-bottom: 15px;
+	margin-bottom: 18px;
 }
 .catalog-setting p{
 	/* Позиционирование */
@@ -1170,9 +1173,7 @@ p.ice-sundae{
 
 	/* Анимация */
 
-	/* Разное */
-	
-	
+	/* Разное */	
 }
 
 .container-box{
@@ -1186,7 +1187,7 @@ p.ice-sundae{
 	/* Оформление */
 	background-color: rgba(248, 247, 244, 0.2);
 	border-radius: 20px;
-	padding: 9px 14px;
+	padding: 10px 14px;
 	/* Анимация */
 
 	/* Разное */
@@ -1195,7 +1196,7 @@ p.ice-sundae{
 	/* Позиционирование */
 	position: relative;
 	/* Блочная модель */ 
-    padding: 8px 25px 8px 15px;
+    padding: 8px 31px 8px 15px;
 	/* Типографика */
     font-size: 16px;
 	line-height: 18px;
@@ -1209,7 +1210,7 @@ p.ice-sundae{
     background-color: rgba(248, 247, 244, 0.2);
     background-image: url(../img/select-arrow.svg);
     background-repeat: no-repeat;
-    background-position: 165px center;
+    background-position: 170px center;
 	/* Анимация */
 
 	/* Разное */	
@@ -1241,7 +1242,7 @@ p.ice-sundae{
 .scale{
 	/* Позиционирование */
 	position: absolute;
-	top: 16px;
+	top: 17px;
 	left: 21px;
 	/* Блочная модель */ 
 	width: 176px;
@@ -1257,7 +1258,7 @@ p.ice-sundae{
 .field{
 	/* Позиционирование */
 	position: absolute;
-	top: 16px;
+	top: 17px;
 	left: 38px;
 	/* Блочная модель */ 
 	width: 107px;
@@ -1273,7 +1274,7 @@ p.ice-sundae{
 .toggle-first{
 	/* Позиционирование */
 	position: absolute;
-	top: 8px;
+	top: 9px;
 	left: 36px;
 	/* Блочная модель */ 
 	width: 20px;
@@ -1290,7 +1291,7 @@ p.ice-sundae{
 .toggle-end{
 	/* Позиционирование */
 	position: absolute;
-	top: 8px;
+	top: 9px;
 	left: 133px;
 	/* Блочная модель */ 
 	width: 20px;
@@ -1307,7 +1308,7 @@ p.ice-sundae{
 .toggle-center-first{
 	/* Позиционирование */
 	position: absolute;
-	top: 16px;
+	top: 17px;
 	left: 44px;
 	/* Блочная модель */ 
 	width: 4px;
@@ -1324,7 +1325,7 @@ p.ice-sundae{
 .toggle-center-end{
 	/* Позиционирование */
 	position: absolute;
-	top: 16px;
+	top: 17px;
 	left: 141px;
 	/* Блочная модель */ 
 	width: 4px;
@@ -1345,7 +1346,7 @@ p.ice-sundae{
 	/* Блочная модель */
 	display: block;
 	padding-left: 32px;
-	padding-right: 20px;
+	padding-right: 17px;
 	/* Типографика */
 
 	/* Оформление */
@@ -1362,7 +1363,7 @@ p.ice-sundae{
     /* Позиционирование */
     position: absolute;
     left: 0;
-    top: -4px;
+    top: -3px;
 	/* Блочная модель */
 	width: 25px;
 	height: 25px;
@@ -1381,7 +1382,7 @@ p.ice-sundae{
     /* Позиционирование */
     position: absolute;
     left: 0;
-    top: -4px;
+    top: -3px;
 	/* Блочная модель */
 	width: 25px;
 	height: 25px;
@@ -1588,7 +1589,7 @@ p.ice-sundae{
 	/* Позиционирование */
 	position: absolute;
 	top: 210px;
-	left: 13px;
+	left: 1px;
 	/* Блочная модель */
 
 	/* Типографика */
@@ -1607,8 +1608,8 @@ p.ice-sundae{
 .ice-item small{
 	/* Позиционирование */
 	position: absolute;
-	top: 210px;
-	left: 125px;
+	top: 214px;
+	left: 114px;
 	/* Блочная модель */
 
 	/* Типографика */
@@ -1629,7 +1630,7 @@ p.ice-sundae{
 	
 	/* Блочная модель */
     display: block;
-    margin-top: 15px;
+    margin-top: 10px;
 	/* Типографика */
 	font-size: 16px;
 	line-height: 22px;
@@ -1746,9 +1747,8 @@ p.ice-sundae{
 
 	/* Типографика */
 	font-size: 14px;
-	line-height: 16px;
+	line-height: 13px;
 	color: #ffffff;
-	padding-left: 9px;
 	/* Оформление */
 	
 	/* Анимация */
@@ -1816,7 +1816,6 @@ p.ice-sundae{
 	margin: 0 auto;
 	margin-bottom: 39px;
 	padding-top: 282px;
-	padding-right: 8px;
 	/* Типографика */
     font-size: 60px;
     font-weight: bold;
@@ -2492,6 +2491,8 @@ a.btn-hit-ice:active {
 	/* Блочная модель */
 	display: flex;
 	width: 49%;
+	margin-bottom: 5px;
+	box-sizing: border-box;
 	/* Типографика */
 
 	/* Оформление */
@@ -2501,7 +2502,6 @@ a.btn-hit-ice:active {
 }
 .features-list p{
 	padding-top: 15px;
-	padding-bottom: 10px;
 	padding-left: 7px;
 	margin: 0;
 }
@@ -2518,6 +2518,9 @@ a.btn-hit-ice:active {
 	/* Анимация */
 
 	/* Разное */
+}
+.features-list li:nth-child(2n){
+	padding-left: 4px;
 }
 .container-features h3{
 	/* Позиционирование */
@@ -2626,7 +2629,7 @@ a.btn-hit-ice:active {
 	
 	/* Блочная модель */
     display: block;
-    width: 280px;
+    width: 281px;
     margin-top: 4px;
 	/* Типографика */
 	font-size: 24px;
@@ -2668,7 +2671,7 @@ a.btn-hit-ice:active {
 	
 	/* Блочная модель */
     width: 510px;
-    padding: 30px 20px;
+    padding: 30px 19px;
 	/* Типографика */
 	font-size: 16px;
 	line-height: 22px;
@@ -2684,7 +2687,7 @@ a.btn-hit-ice:active {
 	/* Позиционирование */
 	
 	/* Блочная модель */
-    width: 337px;
+    width: 340px;
     padding: 0 14px;
 	/* Типографика */
 	font-size: 16px;
@@ -2768,8 +2771,7 @@ a.subscribe-link:active {
 	position: relative;
 	min-height: 367px;
 	padding-top: 63px;
-	padding-bottom: 63px;
-	margin-top: 8px;
+	margin-top: 40px;
 	/* Типографика */
 
 	/* Оформление */
@@ -2792,7 +2794,6 @@ a.subscribe-link:active {
 	/* Оформление */
 	border-radius: 15px;
 	background-color: rgba(255, 254, 254, 0.98);
-	opacity: 98%;
 	/* Анимация */
 
 	/* Разное */
@@ -3103,7 +3104,7 @@ a.subscribe-link:active {
 	/* Разное */
 }
 .main-footer{
-	margin-top: 17px;
+	margin-top: 16px;
 }
 .wrap-footer{
 	/* Позиционирование */
@@ -3119,6 +3120,10 @@ a.subscribe-link:active {
 	/* Анимация */
 
 	/* Разное */	
+}
+.footer-social{
+	padding-top: 14px;
+	padding-left: 2px;
 }
 .footer-social ul{
 	/* Позиционирование */
@@ -3163,6 +3168,9 @@ a.subscribe-link:active {
 	display: flex;
 	width: 340px;
 	flex-wrap: wrap;
+	padding-left: 45px;
+	padding-top: 14px;
+	padding-bottom: 10px;
 }
 .footer-info span{
 	border-bottom: 1px solid rgba(255, 255, 255, .2);
@@ -3202,7 +3210,7 @@ a.subscribe-link:active {
     /* Позиционирование */
     position: absolute;
     top: 3px;
-    left: -20px;
+    left: -22px;
 	/* Блочная модель */
 	width: 15px;
 	height: 13px;
@@ -3216,6 +3224,13 @@ a.subscribe-link:active {
 	/* Разное */
 	content: "";
     
+}
+.info-col-left{
+	width: 111px;
+	margin-right: 30px;
+}
+.info-col-right{
+	width: 162px;
 }
 
 .htmlacademy{
@@ -3237,9 +3252,12 @@ a.subscribe-link:active {
 .htmlacademy img{
 	width: 113px;
 	height: 38px;
+	padding-left: 2px;
+	padding-bottom: 2px;
 }
 .htmlacademy p{
 	margin: 0;
+	padding-left: 1px;
 }
 .htmlacademy a{
 	color: #ffffff;

@@ -3,7 +3,7 @@
   <head>
 	<meta charset="UTF-8">
 	<title>HTML Academy: Глейси</title>
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">    
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
   </head>
@@ -15,7 +15,7 @@
   			<div class="wrapper">
   				<div class="navigation">
 		  			<a href="index.html">
-		  				<img src="img/logo.svg" width="156" height="64" alt="Логотип сайта">
+		  				<img src="img/logo.svg" width="156" height="64" class="logo" alt="Логотип сайта">
 		  			</a>
 
 		  			<ul class="site-navigation">
@@ -108,7 +108,6 @@
 					<b class="time-work">
 	  					С 10 до 20, ежедневно
 	  				</b>
-	  				<br>
 	  				<b class="main-phone">
 	  					8 812 450-25-25
 	  				</b>
@@ -396,6 +395,12 @@
 							<a href="#" class="paginator">3</a>
 						</li>
 						<li class="item">
+							<a href="#" class="paginator">4</a>
+						</li>
+						<li class="item">
+							<a href="#" class="paginator">5</a>
+						</li>
+						<li class="item">
 							<a href="#" class="paginator">
 								<img src="img/pug-right.png" alt="страница вперед">
 							</a>
@@ -440,26 +445,30 @@
     		</section>
       
 			<section class="footer-info">
-				<a href="#" class="provider-info">
-					<span>
-						Для поставщиков
-					</span>
-				</a>
-				<a href="#" class="about-info">
-					<span>
-						Наши документы
-					</span>
-				</a>
-				<a href="#" class="about-info">
-					<span>
-						О производстве
-					</span>
-				</a>
-				<a href="#" class="about-info">
-					<span>
-						Экологические стандарты
-					</span>
-				</a>
+				<div class="info-col-left">
+					<a href="#" class="provider-info">
+						<span>
+							Для поставщиков
+						</span>
+					</a>
+					<a href="#" class="about-info">
+						<span>
+							О производстве
+						</span>
+					</a>
+				</div>
+				<div class="info-col-right">
+					<a href="#" class="about-info">
+						<span>
+							Наши документы
+						</span>
+					</a>
+					<a href="#" class="about-info">
+						<span>
+							Экологические стандарты
+						</span>
+					</a>
+				</div>
 			</section>
 
 			<section class="htmlacademy">
