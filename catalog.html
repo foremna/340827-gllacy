@@ -12,8 +12,11 @@
   	<header class="main-header">
 		
   		<nav class="main-navigation">
+
   			<div class="wrapper">
+
   				<div class="navigation">
+
 		  			<a href="index.html">
 		  				<img src="img/logo.svg" width="156" height="64" class="logo" alt="Логотип сайта">
 		  			</a>
@@ -31,21 +34,23 @@
 		  				<li><a href="#" class="link menu"><span>Доставка и оплата</span></a></li>
 		  				<li><a href="#" class="link menu"><span>О Компании</span></a></li>
 		  			</ul>
+
 		  			<div class="modal-links">
 		  				<a href="#" class="search">
 		  					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17"><path fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/></svg>
 		  					<span class="visually-hidden">поиск</span>
-		  					<div class="user-search-form">
-		  						<form action="https://echo.htmlacademy.ru" method="get" class="modal-form-search">
-		  							<input type="search" name="search" placeholder="Что ищем?" id="">
-		  						</form>
-		  					</div>
 						</a>
+						<div class="user-search-form">
+		  					<form action="https://echo.htmlacademy.ru" method="get" class="modal-form-search">
+		  						<input type="search" name="search" placeholder="Что ищем?">
+		  					</form>
+		  				</div>
 		  				<a href="#" class="sign-in">
 		  					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19"><g fill="#000"><path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/><path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></g></svg>
 		  					<span class="visually-hidden">вход</span>
 		  					<span>Вход</span>
 		  				</a>
+
 		  				<div class="modal-form-appointment">
 		  					<form action="https://echo.htmlacademy.ru" method="get" class="form-appointment">
 		  						<input type="email" name="email" placeholder="Электронная почта" required="">
@@ -65,9 +70,10 @@
 		  					<span class="visually-hidden">корзина</span>
 							<span>2 товара</span>
 		  				</a>
+
 		  				<div class="main-basket"> <!-- Корзина -->
 	  				
-			  				<ul >
+			  				<ul>
 			  					<li class="item-basket">
 			  						<img src="img/ice-mini-one.png" alt="Пломбир с апельсиновым джемом">
 			  						<span class="ice-basket">Пломбир с апельсиновым джемом</span>
@@ -85,12 +91,10 @@
 			  				</ul>
 							<b class="total">Итого: 750 руб.</b>
 							<button class="formalize-btn">Оформить заказ</button>
-					
-	  					</div>
+						</div>
+					 </div>
 				</div>
 	  		</div>
-
-	  		
 
   		</nav>
 
@@ -123,67 +127,67 @@
 			</div>
 
 			<div class="wrapper wrap-setting">
+				<form action="https://echo.htmlacademy.ru" method="get">
+					<div class="catalog-setting ">
+						<p class="streamline">Сортировка:</p>
+						<div class="container-box set-stream">
+							<select name="streamline" class="setting-select">
+								<option value="population" class="streamline-item">по популярности</option>
+								<option value="cheap" class="streamline-item">сначала недорогие</option>
+								<option value="dear" class="streamline-item">сначала дорогие</option>
+								<option value="fatnesses" class="streamline-item">по жирности</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="catalog-setting ">
+						<p class="reg-price">Цена: 100 руб. – 500 руб</p>
+						<div class="container-box set-stream">
+							<div class="range-cost">
+								<div class="scale"></div>
+								<div class="field"></div>
+								<div class="toggle-first"></div>
+								<div class="toggle-end"></div>
+								<div class="toggle-center-first"></div>
+								<div class="toggle-center-end"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="catalog-setting">
+							<p class="fatnesses">Жирность:</p>
+							<div class="container-box fatnesses-item">
+								<input class="visually-hidden" type="radio" name="fatnesses" id="zero" value="1">
+								<label for="zero">0%</label>
+								<input class="visually-hidden" type="radio" name="fatnesses" id="ten" value="2" checked>
+								<label for="ten">до 10%</label>
+								<input class="visually-hidden" type="radio" name="fatnesses" id="thirty" value="3">
+								<label for="thirty">до 30%</label>
+								<input class="visually-hidden" type="radio" name="fatnesses" id="big-thirty" value="4">
+								<label for="big-thirty">выше 30%</label>
+							</div>
+					</div>
+
+					<div class="catalog-setting">
+							<p class="fillers">Наполнители:</p>
+							<div class="container-box fillers-item">
+								<input class="visually-hidden" type="checkbox" name="icecream" id="choco" value="1" checked>
+								<label for="choco">шоколадные</label>
+								<input class="visually-hidden" type="checkbox" name="icecream" id="sugar" value="2" checked>
+								<label for="sugar">сахарные присыпки</label>
+								<input class="visually-hidden" type="checkbox" name="icecream" id="fruit" value="3">
+								<label for="fruit">фрукты</label>
+								<input class="visually-hidden" type="checkbox" name="icecream" id="syrup" value="4">
+								<label for="syrup">сиропы</label>
+								<input class="visually-hidden" type="checkbox" name="icecream" id="jam" value="5">
+								<label for="jam">джемы</label>
+							</div>
+					</div>
 				
-				<div class="catalog-setting ">
-					<p class="streamline">Сортировка:</p>
-					<div class="container-box set-stream">
-						<select name="streamline" id="" class="setting-select">
-							<option value="population" class="streamline-item">по популярности</option>
-							<option value="cheap" class="streamline-item">сначала недорогие</option>
-							<option value="dear" class="streamline-item">сначала дорогие</option>
-							<option value="fatnesses" class="streamline-item">по жирности</option>
-						</select>
+					<div class="setting-button">
+						<button type="submit" class="apply-btn">Применить</button>
 					</div>
-				</div>
-
-			
-				<div class="catalog-setting ">
-					<p class="reg-price">Цена: 100 руб. – 500 руб</p>
-					<div class="container-box set-stream">
-						<div class="range-cost">
-							<div class="scale"></div>
-							<div class="field"></div>
-							<div class="toggle-first"></div>
-							<div class="toggle-end"></div>
-							<div class="toggle-center-first"></div>
-							<div class="toggle-center-end"></div>
-						</div>
-					</div>
-				</div>
-
-				<div class="catalog-setting">
-						<p class="fatnesses">Жирность:</p>
-						<div class="container-box fatnesses-item">
-							<input class="visually-hidden" type="radio" name="fatnesses" id="zero" value="1">
-							<label for="zero">0%</label>
-							<input class="visually-hidden" type="radio" name="fatnesses" id="ten" value="2" checked>
-							<label for="ten">до 10%</label>
-							<input class="visually-hidden" type="radio" name="fatnesses" id="thirty" value="3">
-							<label for="thirty">до 30%</label>
-							<input class="visually-hidden" type="radio" name="fatnesses" id="big-thirty" value="4">
-							<label for="big-thirty">выше 30%</label>
-						</div>
-				</div>
-
-				<div class="catalog-setting">
-						<p class="fillers">Наполнители:</p>
-						<div class="container-box fillers-item">
-							<input class="visually-hidden" type="checkbox" name="icecream" id="choco" value="1" checked>
-							<label for="choco">шоколадные</label>
-							<input class="visually-hidden" type="checkbox" name="icecream" id="sugar" value="2" checked>
-							<label for="sugar">сахарные присыпки</label>
-							<input class="visually-hidden" type="checkbox" name="icecream" id="fruit" value="3">
-							<label for="fruit">фрукты</label>
-							<input class="visually-hidden" type="checkbox" name="icecream" id="syrup" value="4">
-							<label for="syrup">сиропы</label>
-							<input class="visually-hidden" type="checkbox" name="icecream" id="jam" value="5">
-							<label for="jam">джемы</label>
-						</div>
-				</div>
-			
-				<div class="setting-button">
-					<button class="apply-btn">Применить</button>
-				</div>
+				</form>
 
 			</div>
 
@@ -194,7 +198,7 @@
             <div class="wrapper wrap-catalog">
 
 				<div class="ice-item">
-					<img src="img/ic-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"></img>
+					<img src="img/ic-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
 					<b>
 						310₽
 					</b>
@@ -209,7 +213,7 @@
 					<a href="#" class="btn-hit-ice">Быстрый просмотр</a>
 				</div>
 				<div class="ice-item">
-					<img src="img/ic-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада"></img>
+					<img src="img/ic-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
 					<b>
 						380₽
 					</b>
@@ -224,7 +228,7 @@
 					<a href="#" class="btn-hit-ice">Быстрый просмотр</a>
 				</div>
 				<div class="ice-item">
-					<img src="img/ic-3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада"></img>
+					<img src="img/ic-3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
 					<b>
 						355₽
 					</b>
@@ -239,7 +243,7 @@
 					<a href="#" class="btn-hit-ice">Быстрый просмотр</a>
 				</div>
 				<div class="ice-item">
-					<img src="img/ic-4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой"></img>
+					<img src="img/ic-4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
 					<b>
 						415₽
 					</b>
@@ -254,7 +258,7 @@
 					<a href="#" class="btn-hit-ice">Быстрый просмотр</a>
 				</div>
 				<div class="ice-item">
-					<img src="img/ic-5.jpg" width="267" height="267" alt="Сливочное с брусничным джемом"></img>
+					<img src="img/ic-5.jpg" width="267" height="267" alt="Сливочное с брусничным джемом">
 					<b>
 						325₽
 					</b>
@@ -269,7 +273,7 @@
 					<a href="#" class="btn-hit-ice">Быстрый просмотр</a>
 				</div>
 				<div class="ice-item">
-					<img src="img/ic-6.jpg" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники"></img>
+					<img src="img/ic-6.jpg" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники">
 					<b>
 						410₽
 					</b>
@@ -284,7 +288,7 @@
 					<a href="#" class="btn-hit-ice">Быстрый просмотр</a>
 				</div>
 				<div class="ice-item">
-					<img src="img/ic-7.jpg" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой"></img>
+					<img src="img/ic-7.jpg" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
 					<b>
 						375₽
 					</b>
@@ -299,7 +303,7 @@
 					<a href="#" class="btn-hit-ice">Быстрый просмотр</a>
 				</div>
 				<div class="ice-item">
-					<img src="img/ic-8.jpg" width="267" height="267" alt="Сливочное с шоколадной стружкой"></img>
+					<img src="img/ic-8.jpg" width="267" height="267" alt="Сливочное с шоколадной стружкой">
 					<b>
 						320₽
 					</b>
@@ -314,7 +318,7 @@
 					<a href="#" class="btn-hit-ice">Быстрый просмотр</a>
 				</div>
 				<div class="ice-item">
-					<img src="img/ic-9.jpg" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада"></img>
+					<img src="img/ic-9.jpg" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
 					<b>
 						440₽
 					</b>
@@ -329,7 +333,7 @@
 					<a href="#" class="btn-hit-ice">Быстрый просмотр</a>
 				</div>
 				<div class="ice-item">
-					<img src="img/ic-10.jpg" width="267" height="267" alt="Сливочноe с ментоловым сиропом"></img>
+					<img src="img/ic-10.jpg" width="267" height="267" alt="Сливочноe с ментоловым сиропом">
 					<b>
 						435₽
 					</b>
@@ -344,7 +348,7 @@
 					<a href="#" class="btn-hit-ice">Быстрый просмотр</a>
 				</div>
 				<div class="ice-item">
-					<img src="img/ic-11.jpg" width="267" height="267" alt="Сливочное с кусочками черного шоколада"></img>
+					<img src="img/ic-11.jpg" width="267" height="267" alt="Сливочное с кусочками черного шоколада">
 					<b>
 						355₽
 					</b>
@@ -359,7 +363,7 @@
 					<a href="#" class="btn-hit-ice">Быстрый просмотр</a>
 				</div>
 				<div class="ice-item">
-					<img src="img/ic-12.jpg" width="267" height="267" alt="Сливочное с мятным сиропом"></img>
+					<img src="img/ic-12.jpg" width="267" height="267" alt="Сливочное с мятным сиропом">
 					<b>
 						420₽
 					</b>

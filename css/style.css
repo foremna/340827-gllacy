@@ -463,8 +463,8 @@ a.bold:active{
 .user-search-form{
 	/* Позиционирование */
     position: absolute;
-    top: 36px;
-    right: 0px;
+    top: 53px;
+    right: 229px;
 	/* Блочная модель */
 	display: none;
 	width: 312px;
@@ -495,7 +495,7 @@ a.bold:active{
 
 	/* Разное */
 }
-.search:hover .user-search-form{
+.search:hover + .user-search-form{
 	display: block;
 }
 .sign-in{
@@ -574,7 +574,7 @@ a.bold:active{
 	/* Позиционирование */
     position: absolute;
     top: 53px;
-    right: 110px;
+    right: 125px;
 	/* Блочная модель */
 	display: none;
 	width: 239px;
@@ -2699,7 +2699,7 @@ a.btn-hit-ice:active {
 
 	/* Разное */
 }
-a.subscribe-link{
+.subscribe-link{
 	/* Позиционирование */
 	
 	/* Блочная модель */
@@ -2721,7 +2721,7 @@ a.subscribe-link{
 	/* Разное */
 }
 
-a.subscribe-link:hover{
+.subscribe-link:hover{
 	/* Позиционирование */
 	
 	/* Блочная модель */
@@ -2742,7 +2742,7 @@ a.subscribe-link:hover{
 	/* Разное */
 
 }
-a.subscribe-link:active {
+.subscribe-link:active {
 	/* Позиционирование */
 	
 	/* Блочная модель */
