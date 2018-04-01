@@ -677,7 +677,7 @@ p.ice-sundae{
 	padding-left: 32px;
 	margin-right: 18px;
 	margin-bottom: 9px;
-  cursor: pointer;
+    cursor: pointer;
 }
 .fatnesses-item label::before{
     position: absolute;
