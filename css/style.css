@@ -547,7 +547,7 @@ p.ice-sundae{
 .form-setting{
 	display: flex;
 	flex-wrap: wrap;
-	margin-bottom: 27px;
+	margin-bottom: 24px;
 }
 .catalog-setting{
 	padding-right: 16px;
@@ -555,7 +555,7 @@ p.ice-sundae{
 }
 .catalog-setting p{
 	display: block;
-	margin-bottom: 7px;
+	margin-bottom: 8px;
 	margin-top: 0;
 	margin-left: 15px;
 	font-size: 14px;
@@ -653,9 +653,9 @@ p.ice-sundae{
 	border-radius: 50%;
 }
 .fatnesses-item{
-	padding-top: 10px;
+	padding-top: 9px;
 	padding-right: 0;
-	padding-left: 11px;
+	padding-left: 13px;
 }
 .fatnesses-item label{
 	position: relative;
@@ -712,7 +712,7 @@ p.ice-sundae{
 .fillers-item label{
 	position: relative;
 	display: block;
-	padding-bottom: 8px;
+	padding-bottom: 11px;
 	padding-left: 31px;
 	margin-right: 22px;
 	cursor: pointer;
@@ -761,7 +761,7 @@ p.ice-sundae{
 }
 .apply-btn{
 	padding: 8px 28px;
-	margin-top: 21px;
+	margin-top: 23px;
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: 500;
@@ -826,12 +826,13 @@ p.ice-sundae{
 }
 .ice-item a{
 	display: block;
-	width: 260px;
-	margin-top: 10px;
+	width: 100%;
+	margin-top: 8px;
 	font-size: 16px;
 	line-height: 22px;
 	color: #ffffff;
 	text-align: center;
+	box-sizing: border-box;
 }
 .ice-item span{
 	border-bottom: 1px solid rgba(255, 255, 255, .2);
@@ -862,17 +863,19 @@ p.ice-sundae{
 .wrap-pug ul{
 	display: flex;
 	padding: 0;
-	margin-top: 36px;
-	margin-bottom: 28px;
+	margin-top: 42px;
+	margin-bottom: 30px;
 	margin-left: auto;
 	list-style-type: none;
 }
 .paginator{
 	display: block;
-	padding: 4px 8px 3px;
+	padding: 4px 0;
+	width: 26px;
 	margin-right: 3px;
 	font-size: 16px;
 	line-height: 18px;
+	text-align: center;
 	color: #ffffff;
 	text-decoration: none;
 	border-radius: 50%;
@@ -888,10 +891,17 @@ p.ice-sundae{
 	background-color: #fff;
 	color: #323232;
 }
+.paginators li:first-child{
+	margin-right: 16px;
+	padding-top: 4px;
+}
+.paginators li:last-child{
+	margin-left: 12px;
+	padding-top: 4px;
+}
 .wrap-pug{
 	display: flex;
 }
-
 .time-work{
 	font-size: 14px;
 	line-height: 13px;
@@ -1181,6 +1191,11 @@ a.action-btn:active{
 	content: "";
 	z-index: 3;
 }
+.ice-berry-jam a,
+.ice-vanilla a,
+.ice-syrup a{
+	width: 255px;
+}
 a.btn-hit-ice{
 	display: none;
 	position: absolute;
@@ -1193,7 +1208,7 @@ a.btn-hit-ice{
 	transform: translate(-50%,0 );
 	border-radius: 35px;
 	width: 200px;
-	height: 34px;
+	height: 44px;
 	color: #ffffff;
 	font-size: 18px;
 	line-height: 24px;
